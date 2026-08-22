@@ -208,17 +208,56 @@ first:
 
 ## Fields covered
 
-Exactly one field file loads per session, based on what you're working on:
+Exactly one field file loads per session. Selection goes by **the method
+actually used, not your department** — a psychologist running an fMRI study
+gets the neuroscience file; a computer scientist running a user study gets
+the HCI one.
 
-- **Psychology**
-- **Clinical / biomedical**
-- **Machine learning**
-- **Social science** (sociology, political science, economics, and related
-  fields)
-- **General** — the fallback, used when your field isn't one of the above,
-  or isn't yet known. Peer says plainly when it's using general defaults
-  instead of field-specific norms, so you know to double-check anything
-  field-sensitive against your own discipline's conventions.
+**Life and health sciences**
+Clinical & biomedical (trials, patient studies) · Epidemiology & public
+health · Genomics & bioinformatics · Neuroscience · Pharmacology & drug
+development · Nursing & health services (delivery, implementation, QI) ·
+Computational biomedicine (clinical prediction models, medical imaging AI)
+
+**Psychology and behavioral science**
+Psychology (general, social, experimental) · Clinical psychology (therapy
+trials, psychopathology) · Cognitive science (trial-level experiments,
+cognitive modeling) · Developmental psychology · Industrial-organizational
+psychology
+
+**Social sciences**
+Social science (sociology, political science) · Economics · Computational
+social science (platform and trace data) · Social networks · Education
+
+**Computing — learning and intelligent systems**
+Machine learning (training, benchmarking) · Artificial intelligence (LLMs,
+agents, AI evaluation) · Data science (applied analysis, A/B tests) ·
+Robotics
+
+**Computing — systems and foundations**
+Computer systems & networks · Database systems · Software engineering ·
+Programming languages & methodologies · Theoretical computer science ·
+Applied & discrete mathematics · Numerical analysis
+
+**Computing — human-facing**
+Human-computer interaction · Computer graphics · Computer science
+education · Health & assistive technology · Sustainability informatics
+
+**Cross-cutting**
+**Qualitative research** loads whenever the work is primarily interviews,
+ethnography, or interpretive analysis, in any discipline — most of Peer's
+machinery assumes quantitative work and doesn't apply, and that file says
+what replaces it rather than forcing p-values onto a thematic analysis.
+
+**General** is the fallback when your field isn't listed or isn't yet
+known. Peer says plainly when it's using general defaults instead of
+field-specific norms, so you know to double-check anything field-sensitive
+against your own discipline's conventions.
+
+Each file covers that field's reporting standards, what counts as an
+adequate sample, ethics specifics, publication norms, and the red flags a
+reviewer in that field looks for first — not generic advice with the field's
+name attached.
 
 ## What Peer is not
 
@@ -263,12 +302,42 @@ peer/
     ├── revision-planning.md
     ├── response-to-reviewers.md
     ├── post-publication.md
-    └── fields/
-        ├── general.md
-        ├── psychology.md
+    └── fields/                          — 35 files; exactly one loads
+        ├── general.md                      per session
+        ├── qualitative-research.md
         ├── clinical-biomedical.md
+        ├── epidemiology-public-health.md
+        ├── genomics-bioinformatics.md
+        ├── neuroscience.md
+        ├── pharmacology-drug-development.md
+        ├── nursing-health-services.md
+        ├── computational-biomedicine.md
+        ├── psychology.md
+        ├── clinical-psychology.md
+        ├── cognitive-science.md
+        ├── developmental-psychology.md
+        ├── organizational-psychology.md
+        ├── social-science.md
+        ├── economics.md
+        ├── computational-social-science.md
+        ├── social-networks.md
+        ├── education.md
         ├── machine-learning.md
-        └── social-science.md
+        ├── artificial-intelligence.md
+        ├── data-science.md
+        ├── robotics.md
+        ├── computer-systems-networks.md
+        ├── database-systems.md
+        ├── software-engineering.md
+        ├── programming-languages.md
+        ├── theoretical-computer-science.md
+        ├── applied-discrete-mathematics.md
+        ├── numerical-analysis.md
+        ├── human-computer-interaction.md
+        ├── computer-graphics.md
+        ├── computer-science-education.md
+        ├── health-assistive-technology.md
+        └── sustainability-informatics.md
 ```
 
 Each reference file loads only when its stage is active — Peer never pulls
@@ -279,9 +348,11 @@ the whole tree into context at once.
 Peer lives at
 [github.com/sayeemabdullah/peer](https://github.com/sayeemabdullah/peer).
 Field coverage and sub-skill sharpening are the most useful contributions —
-particularly field files for disciplines not yet covered (economics,
-ecology, materials science, education) and corrections from people who
-actually work in a covered field.
+particularly field files for disciplines not yet covered (ecology, materials
+science, chemistry, physics, law, digital humanities) and corrections from
+people who actually work in a covered field. A correction from someone
+inside a discipline is worth more here than a new file written from outside
+one.
 
 **1. Fork and branch.**
 

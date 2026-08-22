@@ -72,17 +72,64 @@ collected or looked at.
 ### 3. What field is this?
 
 Infer from context (journal mentioned, methods described, terminology used)
-or ask once if unclear. Load exactly **one** file from `references/fields/`:
+or ask once if unclear. Load exactly **one** file from `references/fields/`.
+Pick by the *method actually used*, not by the author's department — a
+psychologist running an fMRI study needs `neuroscience.md`, and a computer
+scientist running a user study needs `human-computer-interaction.md`.
 
-- `psychology.md`
-- `clinical-biomedical.md`
-- `machine-learning.md`
-- `social-science.md`
-- `general.md` — fallback when the field isn't covered, or isn't yet known
+**Life and health sciences**
+`clinical-biomedical.md` (trials, patient studies) ·
+`epidemiology-public-health.md` (population/observational) ·
+`genomics-bioinformatics.md` · `neuroscience.md` ·
+`pharmacology-drug-development.md` (preclinical, PK/PD) ·
+`nursing-health-services.md` (delivery, implementation, QI) ·
+`computational-biomedicine.md` (clinical prediction models, medical imaging AI)
 
-If the field doesn't match any specific file, use `general.md` and say so
-plainly rather than improvising field-specific norms you're not sure hold.
-**Never load more than one field file in a session.**
+**Psychology and behavioral science**
+`psychology.md` (general/social/experimental) · `clinical-psychology.md`
+(therapy trials, psychopathology) · `cognitive-science.md` (trial-level
+experiments, cognitive modeling) · `developmental-psychology.md` ·
+`organizational-psychology.md` (workplace, I-O)
+
+**Social sciences**
+`social-science.md` (sociology, political science, survey/causal work) ·
+`economics.md` · `computational-social-science.md` (platform and trace
+data) · `social-networks.md` (network structure and inference) ·
+`education.md`
+
+**Computing — learning and intelligent systems**
+`machine-learning.md` (training, benchmarking, model comparison) ·
+`artificial-intelligence.md` (LLMs, agents, AI evaluation) ·
+`data-science.md` (applied/observational analysis, A/B tests) ·
+`robotics.md`
+
+**Computing — systems and foundations**
+`computer-systems-networks.md` · `database-systems.md` ·
+`software-engineering.md` · `programming-languages.md` ·
+`theoretical-computer-science.md` (proof-based) ·
+`applied-discrete-mathematics.md` (combinatorics, optimization, OR) ·
+`numerical-analysis.md` (scientific computing)
+
+**Computing — human-facing**
+`human-computer-interaction.md` · `computer-graphics.md` ·
+`computer-science-education.md` · `health-assistive-technology.md` ·
+`sustainability-informatics.md` (energy, carbon, ICT4S)
+
+**Cross-cutting**
+`qualitative-research.md` — load this whenever the work is primarily
+interviews, ethnography, focus groups, or interpretive analysis, in **any**
+discipline. Most of this skill's machinery assumes quantitative work and
+does not apply; that file says what replaces it.
+
+`general.md` — the fallback when the field isn't covered above, or isn't yet
+known. Use it and **say so plainly** rather than improvising field-specific
+norms you're not sure hold.
+
+**Never load more than one field file in a session.** If a study genuinely
+spans two (a clinical trial of a digital health tool, a mixed-methods
+study), load the one governing the claim under discussion and say which
+you're using and why; consult a second only if the conversation moves to a
+claim the first doesn't cover.
 
 ## Routing table
 
