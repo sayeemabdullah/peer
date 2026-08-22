@@ -19,15 +19,18 @@ grab-and-upload process.
 
 **1. Get the bundle.**
 
-Download **`peer.skill`** from the
-[latest release](https://github.com/sayeemabdullah/peer/releases/latest) —
-the [Agent Skills](https://agentskills.io) bundle, built by CI from the
-tagged source and ready to upload as-is.
+Download **`peer.skill`** — the [Agent Skills](https://agentskills.io)
+bundle, ready to upload as-is. Either grab it from the
+[latest release](https://github.com/sayeemabdullah/peer/releases/latest) for
+a tagged version, or take
+[`peer.skill`](https://github.com/sayeemabdullah/peer/raw/main/peer.skill)
+from the repo for the current state of `main`.
 
-It isn't committed to the repo on purpose: a checked-in bundle goes stale
-the moment someone edits a skill file without rebuilding, and a stale bundle
-fails silently — you upload it and get the old behavior. Building it from
-source on every tag removes that failure mode.
+The committed bundle can't drift from the source files: CI rebuilds it on
+every pull request and pushes the fresh copy onto the branch, and fails the
+build if a bundle it can't push to is stale. A stale bundle would otherwise
+fail silently — you'd upload it and get the old behavior with nothing to
+indicate anything was wrong.
 
 To build it yourself from a local checkout:
 
@@ -237,8 +240,9 @@ peer/
 │                                          artifact/stage/field detection
 ├── README.md                           — this file
 ├── build.sh                            — builds peer.skill for upload
-├── .github/workflows/build.yml         — validates and builds on every push;
-│                                          publishes the bundle on a v* tag
+├── peer.skill                          — the bundle; kept current by CI
+├── .github/workflows/build.yml         — validates, rebuilds, and commits the
+│                                          bundle; publishes it on a v* tag
 └── references/
     ├── literature-review.md
     ├── preregistering-hypotheses.md
@@ -303,8 +307,13 @@ it to the structure diagram above.
 ./build.sh
 ```
 
-Don't commit the resulting `peer.skill` — it's gitignored, and CI builds it
-fresh. Upload your local build to claude.ai (see
+Commit the resulting `peer.skill` alongside your changes. If you forget, CI
+rebuilds it and pushes the fresh bundle onto your branch automatically — but
+only for branches in this repo. A PR from a fork gets a read-only token, so
+CI can't push there and will fail the build instead, asking you to run
+`./build.sh` and commit the result yourself.
+
+Upload your local build to claude.ai (see
 [Installing it](#installing-it)) and try prompts that should trigger your
 change. For a new field file, confirm Claude loads *that* file and not
 `general.md`. For a sub-skill edit, confirm the behavior actually shifts —

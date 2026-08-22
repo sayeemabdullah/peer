@@ -13,8 +13,15 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
+      # Check out the PR's head branch rather than the merge commit, so the
+      # rebuilt bundle can be committed back onto the contributor's branch.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
 
       - name: Validate SKILL.md against claude.ai limits
         run: |
@@ -64,8 +71,24 @@ jobs:
           done < <(grep -oE '`[a-z0-9-]+\.md`' SKILL.md | tr -d '`' | sort -u)
           exit $fail
 
-      - name: Build bundle
-        run: ./build.sh
+      # Zip archives embed timestamps, so a rebuild always differs byte-for-byte
+      # even when nothing changed. Compare the extracted contents instead, and
+      # keep the committed bundle when only timestamps moved.
+      - name: Build bundle and check for drift
+        id: drift
+        run: |
+          unzip -qo peer.skill -d /tmp/committed
+          ./build.sh
+          unzip -qo peer.skill -d /tmp/built
+
+          if diff -rq /tmp/committed /tmp/built; then
+            echo "committed bundle is current"
+            git checkout -- peer.skill
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "committed bundle is out of date against the source files"
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Verify bundle structure
         run: |
@@ -74,6 +97,36 @@ jobs:
             echo "::error::bundle must nest SKILL.md inside a peer/ folder"
             exit 1
           fi
+
+      # Same-repo PRs: commit the rebuilt bundle onto the PR branch so it lands
+      # on main already current. Fork PRs get a read-only token, so they can't
+      # be pushed to — those are told to rebuild locally instead.
+      - name: Commit rebuilt bundle
+        if: >-
+          steps.drift.outputs.stale == 'true' &&
+          github.event_name == 'pull_request' &&
+          github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add peer.skill
+          git commit -m "Rebuild peer.skill"
+          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
+
+      - name: Fail if a fork PR left the bundle stale
+        if: >-
+          steps.drift.outputs.stale == 'true' &&
+          github.event_name == 'pull_request' &&
+          github.event.pull_request.head.repo.full_name != github.repository
+        run: |
+          echo "::error::peer.skill is out of date. Run ./build.sh and commit the result."
+          exit 1
+
+      - name: Fail if main's bundle is stale
+        if: steps.drift.outputs.stale == 'true' && github.event_name == 'push'
+        run: |
+          echo "::error::peer.skill on this branch is out of date. Run ./build.sh and commit the result."
+          exit 1
 
       - uses: actions/upload-artifact@v4
         with:
