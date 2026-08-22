@@ -19,10 +19,17 @@ grab-and-upload process.
 
 **1. Get the bundle.**
 
-Grab **`peer.skill`** from this repo — the prebuilt
-[Agent Skills](https://agentskills.io) bundle, ready to upload as-is.
+Download **`peer.skill`** from the
+[latest release](https://github.com/sayeemabdullah/peer/releases/latest) —
+the [Agent Skills](https://agentskills.io) bundle, built by CI from the
+tagged source and ready to upload as-is.
 
-To rebuild it after editing any skill file:
+It isn't committed to the repo on purpose: a checked-in bundle goes stale
+the moment someone edits a skill file without rebuilding, and a stale bundle
+fails silently — you upload it and get the old behavior. Building it from
+source on every tag removes that failure mode.
+
+To build it yourself from a local checkout:
 
 ```bash
 ./build.sh
@@ -229,8 +236,9 @@ peer/
 ├── SKILL.md                            — anchor: routing, standing rules,
 │                                          artifact/stage/field detection
 ├── README.md                           — this file
-├── build.sh                            — rebuilds the upload bundle
-├── peer.skill                          — prebuilt bundle to upload
+├── build.sh                            — builds peer.skill for upload
+├── .github/workflows/build.yml         — validates and builds on every push;
+│                                          publishes the bundle on a v* tag
 └── references/
     ├── literature-review.md
     ├── preregistering-hypotheses.md
@@ -289,26 +297,25 @@ sub-skill or field file, wire it into the routing table in **both**
 `SKILL.md` (which Claude reads) and this README (which people read), and add
 it to the structure diagram above.
 
-**3. Rebuild the bundle.**
+**3. Build and test it before opening the PR.**
 
 ```bash
 ./build.sh
 ```
 
-`peer.skill` is committed to the repo, so it goes stale the moment you edit
-a skill file without rebuilding. Commit the regenerated bundle alongside
-your changes — a PR that edits `references/` without a matching
-`peer.skill` update will be asked to rerun this.
-
-**4. Test it before opening the PR.**
-
-Upload your rebuilt `peer.skill` to claude.ai (see
+Don't commit the resulting `peer.skill` — it's gitignored, and CI builds it
+fresh. Upload your local build to claude.ai (see
 [Installing it](#installing-it)) and try prompts that should trigger your
 change. For a new field file, confirm Claude loads *that* file and not
 `general.md`. For a sub-skill edit, confirm the behavior actually shifts —
 skill instructions that read well don't always change what Claude does.
 
-**5. Open the PR.**
+CI runs on every PR and will fail the build if the `description` exceeds
+claude.ai's 200-character limit, if `SKILL.md` grows past 500 lines, if
+`SKILL.md` routes to a reference file that doesn't exist, or if the bundle
+comes out with the wrong structure. Those are cheap to check locally first.
+
+**4. Open the PR.**
 
 ```bash
 git commit -am "Add ecology field file"
@@ -320,6 +327,10 @@ In the PR description, say what you changed, what you tested it against,
 and — if you work in the field you're editing — say so. Field norms are
 exactly the kind of thing that's hard to verify from outside a discipline,
 so firsthand knowledge carries real weight in review.
+
+`main` is protected: changes land through a PR that passes CI and carries
+the owner's approval, never through a direct push. Merged branches are
+deleted automatically.
 
 **What tends to get pushed back on:** field-specific claims stated with more
 confidence than the contributor can back up, sub-skills that grow into
