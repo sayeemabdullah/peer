@@ -1,0 +1,5 @@
+# Built by ./build.sh and by CI. Download it from the Releases page instead of
+# committing it, so it can never go stale against the source files.
+*.skill
+
+.DS_Store

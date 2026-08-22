@@ -1,0 +1,102 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate SKILL.md against claude.ai limits
+        run: |
+          name=$(awk '/^---$/{n++; next} n==1 && /^name:/{sub(/^name:[[:space:]]*/, ""); print; exit}' SKILL.md)
+          desc=$(awk '/^---$/{n++; next} n==1 && /^description:/{sub(/^description:[[:space:]]*/, ""); print; exit}' SKILL.md)
+
+          fail=0
+
+          # name: lowercase letters, numbers, hyphens; max 64 chars
+          if [[ ! "$name" =~ ^[a-z0-9-]{1,64}$ ]]; then
+            echo "::error::name '$name' must be lowercase letters, numbers, and hyphens, max 64 chars"
+            fail=1
+          fi
+
+          # description: claude.ai truncates at 200 chars
+          if (( ${#desc} > 200 )); then
+            echo "::error::description is ${#desc} chars; claude.ai limits it to 200"
+            fail=1
+          fi
+          if [[ -z "$desc" ]]; then
+            echo "::error::description is empty"
+            fail=1
+          fi
+
+          # SKILL.md should stay well under 500 lines; the body loads on every trigger
+          lines=$(wc -l < SKILL.md)
+          if (( lines > 500 )); then
+            echo "::error::SKILL.md is $lines lines; keep it under 500"
+            fail=1
+          fi
+
+          echo "name: $name"
+          echo "description: ${#desc} chars"
+          echo "SKILL.md: $lines lines"
+          exit $fail
+
+      - name: Check every routed reference file exists
+        run: |
+          fail=0
+          # Pull `filename.md` mentions out of SKILL.md and confirm each resolves.
+          # Redirect into the loop rather than piping, so `fail` survives the loop.
+          while read -r f; do
+            if [[ ! -f "references/$f" && ! -f "references/fields/$f" ]]; then
+              echo "::error::SKILL.md routes to '$f' but no such file exists"
+              fail=1
+            fi
+          done < <(grep -oE '`[a-z0-9-]+\.md`' SKILL.md | tr -d '`' | sort -u)
+          exit $fail
+
+      - name: Build bundle
+        run: ./build.sh
+
+      - name: Verify bundle structure
+        run: |
+          # claude.ai rejects a bundle whose files sit loose at the archive root.
+          if ! unzip -l peer.skill | grep -q ' peer/SKILL.md$'; then
+            echo "::error::bundle must nest SKILL.md inside a peer/ folder"
+            exit 1
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: peer-skill
+          path: peer.skill
+          if-no-files-found: error
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build bundle
+        run: ./build.sh
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" peer.skill \
+            --title "Peer ${GITHUB_REF_NAME}" \
+            --generate-notes
