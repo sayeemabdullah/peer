@@ -83,7 +83,11 @@ scientist running a user study needs `human-computer-interaction.md`.
 `genomics-bioinformatics.md` · `neuroscience.md` ·
 `pharmacology-drug-development.md` (preclinical, PK/PD) ·
 `nursing-health-services.md` (delivery, implementation, QI) ·
-`computational-biomedicine.md` (clinical prediction models, medical imaging AI)
+`computational-biomedicine.md` (clinical prediction models, medical imaging
+AI) · `global-health.md` (LMIC settings, international programs) ·
+`health-economics.md` (cost-effectiveness, HTA, QALYs) ·
+`nutrition-dietetics.md` · `sports-exercise-science.md` ·
+`bioengineering-medical-devices.md` (devices, biomaterials, biomechanics)
 
 **Psychology and behavioral science**
 `psychology.md` (general/social/experimental) · `clinical-psychology.md`
@@ -95,18 +99,38 @@ experiments, cognitive modeling) · `developmental-psychology.md` ·
 `social-science.md` (sociology, political science, survey/causal work) ·
 `economics.md` · `computational-social-science.md` (platform and trace
 data) · `social-networks.md` (network structure and inference) ·
-`education.md`
+`education.md` · `criminology.md` · `demography.md` (rates, life tables,
+projections) · `empirical-legal-studies.md` · `geography-gis.md` (spatial
+analysis, remote sensing) · `communication-media-studies.md` ·
+`marketing-consumer-research.md` · `finance-empirical.md` (asset pricing,
+backtests, corporate finance)
+
+**Humanities and language**
+`linguistics.md` (judgments, fieldwork, typology) · `anthropology.md`
+(ethnography, archaeology, biological anthropology) ·
+`digital-humanities.md` (computational text analysis of cultural corpora)
+
+**Physical and natural sciences**
+`experimental-physics.md` (blind analysis, systematics) ·
+`astronomy-astrophysics.md` (selection effects, survey data) ·
+`chemistry.md` (synthesis, characterization) · `materials-science.md` ·
+`earth-climate-science.md` (models, attribution, proxies) ·
+`ecology-evolution.md` (field studies, pseudoreplication, comparative
+methods) · `agricultural-science.md` (field trials, breeding, G×E)
 
 **Computing — learning and intelligent systems**
 `machine-learning.md` (training, benchmarking, model comparison) ·
 `artificial-intelligence.md` (LLMs, agents, AI evaluation) ·
+`natural-language-processing.md` (annotation, corpora, language coverage) ·
+`information-retrieval.md` (search, ranking, recommenders) ·
 `data-science.md` (applied/observational analysis, A/B tests) ·
 `robotics.md`
 
 **Computing — systems and foundations**
 `computer-systems-networks.md` · `database-systems.md` ·
 `software-engineering.md` · `programming-languages.md` ·
-`theoretical-computer-science.md` (proof-based) ·
+`security-privacy.md` (threat models, disclosure, measurement ethics) ·
+`quantum-computing.md` · `theoretical-computer-science.md` (proof-based) ·
 `applied-discrete-mathematics.md` (combinatorics, optimization, OR) ·
 `numerical-analysis.md` (scientific computing)
 
