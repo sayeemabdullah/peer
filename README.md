@@ -217,7 +217,10 @@ the HCI one.
 Clinical & biomedical (trials, patient studies) · Epidemiology & public
 health · Genomics & bioinformatics · Neuroscience · Pharmacology & drug
 development · Nursing & health services (delivery, implementation, QI) ·
-Computational biomedicine (clinical prediction models, medical imaging AI)
+Computational biomedicine (clinical prediction models, medical imaging AI) ·
+Global health (LMIC settings, international programs) · Health economics
+(cost-effectiveness, HTA) · Nutrition & dietetics · Sports & exercise
+science · Bioengineering & medical devices
 
 **Psychology and behavioral science**
 Psychology (general, social, experimental) · Clinical psychology (therapy
@@ -227,17 +230,31 @@ psychology
 
 **Social sciences**
 Social science (sociology, political science) · Economics · Computational
-social science (platform and trace data) · Social networks · Education
+social science (platform and trace data) · Social networks · Education ·
+Criminology · Demography · Empirical legal studies · Geography & spatial
+analysis · Communication & media studies · Marketing & consumer research ·
+Empirical finance
+
+**Humanities and language**
+Linguistics (judgments, fieldwork, typology) · Anthropology (ethnography,
+archaeology, biological) · Digital humanities
+
+**Physical and natural sciences**
+Experimental physics · Astronomy & astrophysics · Chemistry · Materials
+science · Earth & climate science · Ecology & evolutionary biology ·
+Agricultural & crop science
 
 **Computing — learning and intelligent systems**
 Machine learning (training, benchmarking) · Artificial intelligence (LLMs,
-agents, AI evaluation) · Data science (applied analysis, A/B tests) ·
-Robotics
+agents, AI evaluation) · Natural language processing (annotation, corpora) ·
+Information retrieval (search, ranking, recommenders) · Data science
+(applied analysis, A/B tests) · Robotics
 
 **Computing — systems and foundations**
 Computer systems & networks · Database systems · Software engineering ·
-Programming languages & methodologies · Theoretical computer science ·
-Applied & discrete mathematics · Numerical analysis
+Programming languages & methodologies · Security & privacy · Quantum
+computing · Theoretical computer science · Applied & discrete mathematics ·
+Numerical analysis
 
 **Computing — human-facing**
 Human-computer interaction · Computer graphics · Computer science
@@ -302,8 +319,8 @@ peer/
     ├── revision-planning.md
     ├── response-to-reviewers.md
     ├── post-publication.md
-    └── fields/                          — 35 files; exactly one loads
-        ├── general.md                      per session
+    └── fields/                          — 61 files; exactly one loads
+        ├── general.md
         ├── qualitative-research.md
         ├── clinical-biomedical.md
         ├── epidemiology-public-health.md
@@ -312,6 +329,11 @@ peer/
         ├── pharmacology-drug-development.md
         ├── nursing-health-services.md
         ├── computational-biomedicine.md
+        ├── global-health.md
+        ├── health-economics.md
+        ├── nutrition-dietetics.md
+        ├── sports-exercise-science.md
+        ├── bioengineering-medical-devices.md
         ├── psychology.md
         ├── clinical-psychology.md
         ├── cognitive-science.md
@@ -322,14 +344,35 @@ peer/
         ├── computational-social-science.md
         ├── social-networks.md
         ├── education.md
+        ├── criminology.md
+        ├── demography.md
+        ├── empirical-legal-studies.md
+        ├── geography-gis.md
+        ├── communication-media-studies.md
+        ├── marketing-consumer-research.md
+        ├── finance-empirical.md
+        ├── linguistics.md
+        ├── anthropology.md
+        ├── digital-humanities.md
+        ├── experimental-physics.md
+        ├── astronomy-astrophysics.md
+        ├── chemistry.md
+        ├── materials-science.md
+        ├── earth-climate-science.md
+        ├── ecology-evolution.md
+        ├── agricultural-science.md
         ├── machine-learning.md
         ├── artificial-intelligence.md
+        ├── natural-language-processing.md
+        ├── information-retrieval.md
         ├── data-science.md
         ├── robotics.md
         ├── computer-systems-networks.md
         ├── database-systems.md
         ├── software-engineering.md
         ├── programming-languages.md
+        ├── security-privacy.md
+        ├── quantum-computing.md
         ├── theoretical-computer-science.md
         ├── applied-discrete-mathematics.md
         ├── numerical-analysis.md
