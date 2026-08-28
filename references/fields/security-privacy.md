@@ -98,7 +98,7 @@ Studies of how people handle security are human-subjects research and follow
 - CVE assignment and coordinated disclosure are part of the publication
   process for vulnerability work.
 
-## Red flags specific to this field
+## Red flags
 
 - A defense evaluated only against static, pre-existing attacks
 - Security claimed with no explicit threat model

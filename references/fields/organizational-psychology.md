@@ -94,7 +94,7 @@ shared construct.
 - Data sharing is constrained by organizational confidentiality — describe
   what can be shared and why the rest can't.
 
-## Red flags specific to this field
+## Red flags
 
 - Predictor and outcome from the same self-report survey, with CMV
   addressed only by a Harman's test

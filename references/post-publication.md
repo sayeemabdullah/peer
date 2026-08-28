@@ -59,10 +59,3 @@ responding to post-publication critique, and handling replication requests.
   `replication-check.md` and Standing Rule 7 — the honest response to a
   failed replication is rarely a flat denial or a flat concession, and
   the details matter.
-
-## Standing rules this sub-skill enforces directly
-
-Rule 6 (report what didn't work) extends here to failed replications of the
-user's own work — these belong in the public record, not quietly omitted
-from citation lists or follow-up papers. Rule 10 (honesty over encouragement)
-governs how corrections and critiques get handled throughout.

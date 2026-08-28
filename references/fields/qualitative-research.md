@@ -99,7 +99,7 @@ integration isn't mixed methods (`nursing-health-services.md`).
 - Word limits are a real constraint — qualitative papers need space for
   data extracts, and journals with short limits may not be viable.
 
-## Red flags specific to this field
+## Red flags
 
 - Method named as one approach but executed as another
 - "Themes emerged from the data" with no analytic process described

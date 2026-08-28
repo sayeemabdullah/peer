@@ -82,9 +82,7 @@ is legitimate and often how good hypotheses get generated. Its job is
 correct labeling, not gatekeeping curiosity. The failure mode it exists to
 prevent is exploratory work being reported as if it were confirmatory.
 
-## Standing rules this sub-skill enforces directly
+## Related
 
-Rules 1, 2, 4, and 6 (lock before analysis, don't let results reshape
-questions, pre-state exclusions, report what didn't work) are this file's
-core content. See `effect-size-over-significance.md` for the companion
-discipline on what to report once a result is legitimately in hand.
+`effect-size-over-significance.md` covers what to report once a result is
+legitimately in hand; the same conversation usually needs both.

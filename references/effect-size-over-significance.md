@@ -63,10 +63,7 @@ NNT in clinical work, AUC/precision-recall deltas with confidence intervals
 or bootstrapped variance in ML, standardized coefficients in social science
 regression work. Don't invent a convention the field doesn't use.
 
-## Standing rules this sub-skill enforces directly
+## Related
 
-Rule 3 (effect size and uncertainty always accompany significance) is this
-file's entire purpose. It works closely with `avoiding-p-hacking.md` —
-build and use them together, since the same conversation about a result
-often needs both: was this test legitimate, and if so, what does it
-actually show.
+`avoiding-p-hacking.md` covers whether the test was legitimate; this file
+covers what it shows. Use them together.

@@ -88,7 +88,7 @@ policy weight, which raises the cost of overclaiming.
   interactive discussion — reviews and responses are published alongside.
 - Preprints (ESSOAr, EarthArXiv) accepted and common.
 
-## Red flags specific to this field
+## Red flags
 
 - Attribution language applied to a detection-only result
 - A trend reported without accounting for autocorrelation or period

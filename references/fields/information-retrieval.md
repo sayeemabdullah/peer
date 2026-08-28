@@ -86,7 +86,7 @@ judgments, and offline metrics that don't predict online behavior**.
 - Reproducibility tracks exist at SIGIR and ECIR; artifact and code release
   is expected.
 
-## Red flags specific to this field
+## Red flags
 
 - Metric improvements reported with no significance test across topics
 - An old pooled collection used to evaluate a substantially different system

@@ -94,7 +94,7 @@ identification strategy; specific to this field:
 - Data sharing constrained by student privacy; restricted-access deposits
   are common.
 
-## Red flags specific to this field
+## Red flags
 
 - Students analyzed as independent in a class-level intervention
 - Researcher-developed outcome measure aligned only to the treatment

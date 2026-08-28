@@ -90,7 +90,7 @@ documented cases of research harming the communities studied.
   agreements; say what can and cannot be shared and why, rather than
   treating non-sharing as a deficiency.
 
-## Red flags specific to this field
+## Red flags
 
 - Short-term interviewing presented as ethnography
 - Claims generalized from one community to a named ethnic group

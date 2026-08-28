@@ -71,7 +71,7 @@ and the two are not interchangeable.
 - Code and hardware designs are increasingly released; open hardware
   descriptions materially help reproducibility.
 
-## Red flags specific to this field
+## Red flags
 
 - Simulation-only results described in language implying physical capability
 - A demonstration video with no trial count or success rate

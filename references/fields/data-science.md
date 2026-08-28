@@ -81,7 +81,7 @@ Field-specific concerns:
 - Models acting on people should be checked for subgroup performance
   disparities, not only aggregate accuracy (`ethics-and-bias-check.md`).
 
-## Red flags specific to this field
+## Red flags
 
 - A random split on time-series data
 - Preprocessing fit before the train/test split

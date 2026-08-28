@@ -79,7 +79,7 @@ everything measured is correct.
 - Data deposition (crystallographic data to CCDC/ICSD, computational data to
   Materials Project or NOMAD) is increasingly expected.
 
-## Red flags specific to this field
+## Red flags
 
 - A single micrograph or single specimen supporting a general claim
 - Peak performance reported with no stability or cycling data

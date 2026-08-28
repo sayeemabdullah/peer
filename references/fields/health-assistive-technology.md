@@ -81,7 +81,7 @@ condition), and recruiting 200 participants may be impossible.
 - Accessible versions of papers and figures (alt text, screen-reader-
   compatible PDFs) are an expectation at ASSETS and increasingly elsewhere.
 
-## Red flags specific to this field
+## Red flags
 
 - A health outcome claimed from a usability study
 - Research about a disabled population with no disabled participants

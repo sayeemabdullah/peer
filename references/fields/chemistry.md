@@ -81,7 +81,7 @@ exactly what reviewers and post-publication scrutiny look for.
 - Crystallographic data goes to the CCDC; sequences and spectra to
   appropriate repositories.
 
-## Red flags specific to this field
+## Red flags
 
 - A new compound reported without copies of the actual spectra
 - Yields from a single run reported without a range

@@ -58,9 +58,3 @@ problem (a claim not supported by the results, a missing effect size), name
 it — don't just quietly write around it in a way that hides the underlying
 issue. If the user wants a full critique rather than drafting help, route to
 `adversarial-review.md` instead.
-
-## Standing rules this sub-skill enforces directly
-
-Rule 9 (preserve the author's voice) is central here. Rules 3 and 6 (effect
-sizes accompany significance; report what didn't work) apply directly to
-results-section drafting.

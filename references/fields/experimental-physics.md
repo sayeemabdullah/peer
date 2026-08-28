@@ -79,7 +79,7 @@ is finalized before the answer is visible.
   Physics.
 - Conference proceedings carry less weight than in computer science.
 
-## Red flags specific to this field
+## Red flags
 
 - A measurement quoted with statistical uncertainty only
 - A bump hunt reporting local significance without a trials factor

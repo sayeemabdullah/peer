@@ -89,7 +89,7 @@ substitution when it happens — it is this field's central overclaim.
   usually cannot be shared, so a clear description and a synthetic or
   restricted-access pathway matters more.
 
-## Red flags specific to this field
+## Red flags
 
 - Internal cross-validation only, with deployment language in the abstract
 - Random split on data spanning years, or splitting by image rather than

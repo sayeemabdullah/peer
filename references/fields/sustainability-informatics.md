@@ -86,7 +86,7 @@ framing outruns the measurement.
 - Data, measurement scripts, and the emissions calculation should be
   released; the calculation in particular is where errors hide.
 
-## Red flags specific to this field
+## Red flags
 
 - A carbon figure with no stated system boundary or grid-intensity source
 - Operational energy compared against a baseline's lifecycle impact

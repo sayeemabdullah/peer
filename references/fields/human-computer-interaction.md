@@ -68,7 +68,7 @@ custom instrument is necessary, report its reliability.
 - Study materials, data, and analysis scripts are increasingly expected in
   supplementary material.
 
-## Red flags specific to this field
+## Red flags
 
 - A small-N study reporting only p-values, with no effect size or interval
 - Many measures collected, only the significant ones discussed

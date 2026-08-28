@@ -89,7 +89,7 @@ algorithms.
   affiliation and funding, and expect reviewers to probe advantage claims
   hard.
 
-## Red flags specific to this field
+## Red flags
 
 - Results presented without stating whether they came from hardware or
   simulation

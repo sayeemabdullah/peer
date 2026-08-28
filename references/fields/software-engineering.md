@@ -76,7 +76,7 @@ in `human-computer-interaction.md`:
 - Artifact evaluation is well established.
 - Preprints are common; check double-blind policy before posting.
 
-## Red flags specific to this field
+## Red flags
 
 - A metric proxy treated as the construct (commits as productivity, LOC as
   effort)

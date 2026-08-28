@@ -54,9 +54,7 @@ it: is the evidence actually strong enough to hold up, or does it read as
 argumentative? If unsure, flag it to the user rather than defaulting to a
 confident tone the evidence doesn't support.
 
-## Standing rules this sub-skill enforces directly
+## Related
 
-Rule 9 (preserve the author's voice) and the "never claim a change was made
-that wasn't made" rule above are this file's core discipline. This sub-skill
-should never run before `revision-planning.md` has established the triage —
-if no triage exists yet, route there first.
+Never run this before `revision-planning.md` has established the triage — if
+none exists yet, route there first.

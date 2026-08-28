@@ -63,10 +63,7 @@ concern or serious confound surfaces, say so plainly and don't let it get
 minimized because the study is otherwise ready to go — catching it now is
 the entire point of running this check before collection rather than after.
 
-## Standing rules this sub-skill touches
+## Related
 
-Rule 4 (pre-state exclusion rules) often surfaces here too, since exclusion
-criteria interact with both bias and ethics (e.g., excluding participants
-who don't complete a stressful manipulation). Coordinate with
-`preregistering-hypotheses.md` so exclusion rules identified here make it
-into the locked plan.
+Coordinate with `preregistering-hypotheses.md` so exclusion rules identified
+here make it into the locked plan.

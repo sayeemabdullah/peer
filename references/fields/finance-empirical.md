@@ -100,7 +100,7 @@ much less here than the p-value suggests.
 - Replication studies are increasingly published and have materially changed
   which findings are believed.
 
-## Red flags specific to this field
+## Red flags
 
 - A new factor reported at t ≈ 2 with no multiple-testing adjustment
 - Backtest results with no transaction costs, capacity, or turnover

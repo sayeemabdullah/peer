@@ -99,7 +99,7 @@ non-specialist reviewer misses are still weaknesses (Standing Rule 10).
   methodological review (`submission-strategy.md`).
 - SSRN posting is the norm and is expected early.
 
-## Red flags specific to this field
+## Red flags
 
 - Win rates among litigated cases interpreted as merit
 - Published opinions treated as a sample of decisions

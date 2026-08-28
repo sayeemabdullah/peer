@@ -88,7 +88,7 @@ analyses rather than a single pipeline's result.
 - Data sharing via OpenNeuro/NeuroVault and BIDS-formatted datasets is an
   increasing expectation.
 
-## Red flags specific to this field
+## Red flags
 
 - ROI or time window selected from the same data used to test the effect
 - Uncorrected thresholds reported as findings

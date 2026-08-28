@@ -99,7 +99,7 @@ substantive claim.
 - Replication materials expected; the Human Mortality Database and
   Human Fertility Database are standard shared resources.
 
-## Red flags specific to this field
+## Red flags
 
 - Crude rates compared across populations with different age structures
 - Period TFR decline interpreted as reduced family size without tempo

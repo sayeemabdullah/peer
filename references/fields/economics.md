@@ -94,7 +94,7 @@ the contribution. Expect and require:
   substantial requested additions rather than minor revisions
   (`receiving-peer-review.md`).
 
-## Red flags specific to this field
+## Red flags
 
 - An exclusion restriction asserted rather than argued
 - Two-way fixed effects with staggered treatment timing and no modern

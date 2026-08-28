@@ -66,7 +66,7 @@ networks, supply chains):
 - Instance sets and code are increasingly expected to be released; some
   venues run artifact evaluation.
 
-## Red flags specific to this field
+## Red flags
 
 - A benchmark subset whose selection criteria appear only after the results
 - Timeouts or failures excluded from aggregate statistics without saying so

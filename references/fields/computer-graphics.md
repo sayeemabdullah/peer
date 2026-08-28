@@ -65,7 +65,7 @@ that is an empirical claim about people and needs a study
 - Code and scene release is increasingly common but less universal than in
   ML; releasing is a meaningful credibility signal.
 
-## Red flags specific to this field
+## Red flags
 
 - Comparison images at unequal sample counts, time budgets, or resolution
 - No limitations section and no failure cases

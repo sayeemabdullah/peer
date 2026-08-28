@@ -68,10 +68,8 @@ power, but the same discipline applies: sample size reasoning happens before
 data collection and is based on a pre-specified target of interest, not
 tuned to produce a desired posterior after the fact.
 
-## Standing rules this sub-skill enforces directly
+## Related
 
-Rule 1 (lock the plan, which includes sample size, before analysis) is the
-core of this file. This sub-skill should be invoked from
-`preregistering-hypotheses.md` whenever sample size hasn't yet been
-justified, and from the anchor directly whenever "how many participants do
-I need" is the question on the table.
+Invoked from `preregistering-hypotheses.md` when sample size isn't yet
+justified, and directly whenever "how many participants do I need" is the
+question.

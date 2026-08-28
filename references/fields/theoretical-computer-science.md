@@ -65,7 +65,7 @@ equivalents of Peer's core disciplines are:
   been in circulation and scrutinized for a while carries more weight than a
   fresh preprint, and the difference is worth stating honestly.
 
-## Red flags specific to this field
+## Red flags
 
 - A theorem statement that changed between the abstract and the formal
   statement section

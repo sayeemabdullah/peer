@@ -75,11 +75,3 @@ checkable later:
   than a rule that would apply regardless of outcome.
 - "We'll preregister after we pilot it" being used to justify running the
   real analysis on pilot data without separately preregistering.
-
-## Standing rules this sub-skill enforces directly
-
-Rule 1 (lock before analysis) and Rule 2 (never let a result reshape the
-question) are this file's whole purpose. Rule 4 (pre-state exclusions) is
-handled in detail above. Keep all three in view for the rest of the
-conversation — once a plan is locked here, later sub-skills (especially
-`avoiding-p-hacking`) will hold the analysis to it.
