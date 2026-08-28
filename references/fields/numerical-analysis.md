@@ -71,7 +71,7 @@ Timing comparisons are empirical and subject to the normal disciplines:
 - Code and reproducibility artifacts are increasingly expected; some
   journals run a formal reproducibility review.
 
-## Red flags specific to this field
+## Red flags
 
 - A convergence plot with no reference slope, or too few refinement levels
   to support the claimed rate

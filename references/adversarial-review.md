@@ -86,10 +86,3 @@ It does not rewrite the paper. If the user wants the identified problems
 fixed, that's `manuscript-drafting.md` or a direct editing request — keep
 review and drafting as separate acts so the user can see the critique before
 any prose changes it.
-
-## Standing rules this sub-skill enforces directly
-
-Rules 2, 3, 5, 8, 9, and 10 all converge here — this file is the single
-sub-skill where the most standing rules apply at once. Treat it as the
-place where the discipline of the whole skill gets tested against a real
-document.

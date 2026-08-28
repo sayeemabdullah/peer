@@ -75,7 +75,7 @@ to it and say so.
   specifically — this is a firmer expectation here than in some other
   fields, not just a general best practice.
 
-## Red flags specific to this field
+## Red flags
 
 - A causal claim resting only on a regression with controls, with no
   explicit identification strategy

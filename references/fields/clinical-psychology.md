@@ -87,7 +87,7 @@ standards in `clinical-biomedical.md` also apply in full.
 - Registered Reports are available and well suited to this literature.
 - PsyArXiv preprints are accepted; clinical journals vary — check.
 
-## Red flags specific to this field
+## Red flags
 
 - Waitlist-controlled result described as demonstrating effectiveness
 - Published primary outcome differing from the registered one

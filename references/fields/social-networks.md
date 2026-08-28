@@ -81,7 +81,7 @@ chance in a comparable network.
   and platform terms — release derived measures or synthetic equivalents
   where the raw network can't be shared.
 
-## Red flags specific to this field
+## Red flags
 
 - Node-level regression with iid standard errors
 - A contagion or influence claim that doesn't address homophily

@@ -72,7 +72,7 @@ interventions, novice programmer behavior, and assessment. This is
   such rather than framed as empirical findings.
 - Preprints are accepted at most venues.
 
-## Red flags specific to this field
+## Red flags
 
 - Students analyzed as independent when nested in sections
 - Course grades used as the learning outcome

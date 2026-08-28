@@ -58,9 +58,3 @@ hand off to `revision-planning.md` for the structured, numbered triage with
 effort estimates and contradiction-flagging. Don't skip straight to
 revision planning while comments are still being read reactively; the
 initial evaluative pass here is what makes the later triage trustworthy.
-
-## Standing rules this sub-skill enforces directly
-
-Rule 10 (honesty over encouragement, applied to the user's own reaction as
-much as to the paper) governs this whole file — the goal is a clear-eyed
-read of the feedback, not a comfortable one in either direction.

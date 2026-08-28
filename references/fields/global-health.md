@@ -97,7 +97,7 @@ are themselves methodological concerns**, not a separate compliance step.
   CTRI) where applicable.
 - medRxiv preprints accepted.
 
-## Red flags specific to this field
+## Red flags
 
 - No authors from the country where data was collected
 - Ethics approval only from the high-income sponsoring institution

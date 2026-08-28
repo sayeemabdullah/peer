@@ -60,7 +60,7 @@
 - Data sharing statements are typically required at submission (even if the
   underlying data itself isn't always shared, due to patient privacy).
 
-## Red flags specific to this field
+## Red flags
 
 - A trial reported without a registration number, or with results that
   don't match what was registered (changed primary outcome, added outcomes)

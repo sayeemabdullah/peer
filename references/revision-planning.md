@@ -66,9 +66,7 @@ concern → triage category → planned action → effort estimate. Flag
 contradictions inline where they occur, not in a separate disconnected
 section.
 
-## Standing rules this sub-skill enforces directly
+## Related
 
-Rule 10 (honesty over encouragement) governs the "reviewer is wrong" call
-specifically — resist the pull to reflexively defend the paper. This
-sub-skill feeds directly into `response-to-reviewers.md`; keep the triage
-table since the response letter should map onto it point for point.
+Feeds `response-to-reviewers.md`; keep the triage table, since the letter
+maps onto it point for point.

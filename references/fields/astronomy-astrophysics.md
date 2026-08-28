@@ -77,7 +77,7 @@ Selection effects are therefore the central methodological issue.
 - Telescope time proposals are a distinct writing genre closer to
   `grant-writing.md` than to a manuscript.
 
-## Red flags specific to this field
+## Red flags
 
 - A population claim with no stated selection function
 - Non-detections excluded rather than treated as upper limits

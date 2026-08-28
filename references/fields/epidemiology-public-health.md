@@ -90,7 +90,7 @@ Vague "there may be bias" is not useful. Identify which:
   encouraged for observational analyses of existing data, precisely because
   analytic flexibility is so large.
 
-## Red flags specific to this field
+## Red flags
 
 - Causal language from a cross-sectional design
 - Group-level association applied to individuals

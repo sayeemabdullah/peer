@@ -87,7 +87,7 @@ participants who cannot consent for themselves**.
 - Data and video-coding protocols increasingly shared (Databrary for video,
   with its own consent requirements).
 
-## Red flags specific to this field
+## Red flags
 
 - Cross-sectional age differences described as developmental change
 - Attrition unreported, or retained/lost participants not compared

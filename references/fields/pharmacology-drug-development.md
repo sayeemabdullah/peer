@@ -87,7 +87,7 @@ specific rigor checklist at submission.
   reported; a pharmacological claim about an undisclosed compound is not
   checkable.
 
-## Red flags specific to this field
+## Red flags
 
 - No randomization or blinding described in an animal efficacy study
 - A single dose used to claim a pharmacological effect

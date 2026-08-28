@@ -89,7 +89,7 @@ financial weight** and are scrutinized accordingly.
   quantity despite the skew, so use methods appropriate for mean
   differences rather than transforming to medians.
 
-## Red flags specific to this field
+## Red flags
 
 - A comparator that isn't current standard of care
 - A point ICER with no probabilistic sensitivity analysis

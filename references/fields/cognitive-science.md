@@ -81,7 +81,7 @@ open-science discipline; this file covers what's specific to
 - Data, stimuli, and analysis code sharing on OSF is close to expected;
   model code should be released for computational work.
 
-## Red flags specific to this field
+## Red flags
 
 - Analysis over participant means with items ignored
 - Trimming rules that appear only in the results section

@@ -54,7 +54,7 @@
   likely to draw pointed reviewer criticism in this field than it might
   elsewhere.
 
-## Red flags specific to this field
+## Red flags
 
 - A significant p-value from a small sample (N < ~30 per cell in a
   between-subjects design) presented without acknowledging the effect size

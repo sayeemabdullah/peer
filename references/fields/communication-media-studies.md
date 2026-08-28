@@ -87,7 +87,7 @@ interpretive and critical work see `qualitative-research.md`.
 - Preprints (SocArXiv) accepted and increasingly common; open science
   practices are growing but uneven across the field's subareas.
 
-## Red flags specific to this field
+## Red flags
 
 - Content analysis with percent agreement reported instead of a
   chance-corrected statistic

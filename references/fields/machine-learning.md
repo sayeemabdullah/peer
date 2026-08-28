@@ -75,7 +75,7 @@
   licensing or safety constraints) is close to a default expectation at
   major venues now, not an optional extra.
 
-## Red flags specific to this field
+## Red flags
 
 - Test-set performance reported after what sounds like iterative tuning
   against that same test set

@@ -85,7 +85,7 @@ your question. That has consequences that large N does not fix:
 - Preprints (SocArXiv, arXiv) are standard.
 - Code and derived-data release is expected where terms of service permit.
 
-## Red flags specific to this field
+## Red flags
 
 - Large N presented as if it addressed representativeness
 - Platform data generalized to "people" or "the public" without qualification

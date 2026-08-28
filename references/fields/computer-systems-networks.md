@@ -75,7 +75,7 @@ difference means.
 - Preprints are accepted but less universal than in ML; check the venue's
   anonymity policy during double-blind review before posting.
 
-## Red flags specific to this field
+## Red flags
 
 - A speedup with no hardware or software configuration reported
 - Mean latency only, or a mean with standard deviation for a heavy-tailed

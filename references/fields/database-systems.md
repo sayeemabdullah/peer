@@ -65,7 +65,7 @@ databases.
   plan for it rather than retrofitting.
 - Preprints are common; check double-blind policy before posting.
 
-## Red flags specific to this field
+## Red flags
 
 - A subset of benchmark queries reported without explaining the omission
 - Comparison against a default-configured baseline system

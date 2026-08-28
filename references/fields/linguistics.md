@@ -93,7 +93,7 @@ linguistic samples**.
 - Data and code sharing expected for quantitative work; example sources and
   archived recordings for descriptive work.
 
-## Red flags specific to this field
+## Red flags
 
 - A contested judgment contrast supported only by the author's intuition
 - Examples given with no source, or elicited and spontaneous data conflated

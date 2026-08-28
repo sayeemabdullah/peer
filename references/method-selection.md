@@ -54,10 +54,8 @@ than picking one silently:
 - What each implies for sample size (hand off to `power-analysis.md`)
 - What each implies for the analysis plan that will need to be locked
 
-## Standing rules this sub-skill touches
+## Related
 
-This feeds directly into Rule 1 (lock the plan before analysis) — method
-selection has to happen before, not during, preregistration. If the method
-is already locked and the user is asking about a different analytical
-choice mid-study, that's more likely `avoiding-p-hacking.md` territory —
-check which stage this actually is before routing here.
+If the method is already locked and the question is about an analytical
+choice mid-study, that's `avoiding-p-hacking.md` territory — check which
+stage this actually is first.

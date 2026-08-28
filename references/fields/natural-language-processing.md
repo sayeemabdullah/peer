@@ -88,7 +88,7 @@ specific to **language data as an object of study**.
 - Responsible NLP checklists and limitations sections are mandatory at ACL
   venues — the limitations section is not optional boilerplate and is read.
 
-## Red flags specific to this field
+## Red flags
 
 - Annotation with no agreement statistic, or raw agreement reported as if
   chance-corrected

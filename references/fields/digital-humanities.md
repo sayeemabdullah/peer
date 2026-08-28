@@ -104,7 +104,7 @@ operationalization.
   cycles — coexist awkwardly with computational norms; expect reviewers from
   both traditions and write for both.
 
-## Red flags specific to this field
+## Red flags
 
 - A corpus described without its selection criteria or exclusions
 - Diachronic trends from OCR'd text with no discussion of OCR quality

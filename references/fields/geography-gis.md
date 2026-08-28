@@ -88,7 +88,7 @@ than meaningful entities.
 - Data and code sharing increasingly expected; base data licensing (OS,
   commercial imagery) may constrain redistribution.
 
-## Red flags specific to this field
+## Red flags
 
 - Regression on areal data with no test for spatial autocorrelation
 - Findings reported at one aggregation unit with no scale sensitivity

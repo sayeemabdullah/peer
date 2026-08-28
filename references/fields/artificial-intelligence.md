@@ -82,7 +82,7 @@ this is the default assumption, not an edge case.
   is close to a default expectation; eval harness version matters because
   benchmark scores are not comparable across harness implementations.
 
-## Red flags specific to this field
+## Red flags
 
 - A benchmark number with no contamination check and no prompt/decoding
   details

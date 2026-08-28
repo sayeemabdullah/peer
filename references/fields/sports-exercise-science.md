@@ -87,7 +87,7 @@ sometimes legitimate and sometimes not.
   small-N problem.
 - Data and analysis code sharing is increasing but not yet standard.
 
-## Red flags specific to this field
+## Red flags
 
 - Magnitude-based inference used as the primary inferential method
 - Performance changes reported smaller than the measure's typical error

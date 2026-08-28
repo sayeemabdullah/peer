@@ -96,7 +96,7 @@ refinement here — it's the difference between a result and noise.
 - Code release is expected; tool papers are judged partly on usability and
   documentation.
 
-## Red flags specific to this field
+## Red flags
 
 - An association reported without a replication cohort
 - Cases and controls processed in separate batches

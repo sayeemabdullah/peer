@@ -96,7 +96,7 @@ independent — and it remains common decades after being named.
 - bioRxiv and EcoEvoRxiv preprints are accepted and increasingly common.
 - Registered Reports available at several venues.
 
-## Red flags specific to this field
+## Red flags
 
 - Subsamples within a treated unit analyzed as independent replicates
 - Raw counts compared across sites with no detection modeling

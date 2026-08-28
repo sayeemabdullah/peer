@@ -67,7 +67,7 @@ than asserted as usability.
 - arXiv preprints are common; check double-blind policy before posting.
 - Artifact evaluation is expected at most major venues.
 
-## Red flags specific to this field
+## Red flags
 
 - Soundness proved for a core calculus, with the paper's claims stated for
   the full language

@@ -93,7 +93,7 @@ actively look for the practices that produce unreliable findings.
 - Registered Reports available at several venues.
 - Preprints less established than in psychology but growing.
 
-## Red flags specific to this field
+## Red flags
 
 - A multi-study paper where every study succeeds at N ≈ 100 per cell
 - Process claimed from measured mediation alone

@@ -104,7 +104,7 @@ additional structure from the field's mature experimental-design tradition.
 - Data deposition is increasingly expected; multi-environment trial data is
   valuable for meta-analysis.
 
-## Red flags specific to this field
+## Red flags
 
 - Subsamples within plots analyzed as replicates
 - A recommendation from one site in one season

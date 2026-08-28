@@ -93,7 +93,7 @@ should meet qualitative standards, not be treated as decoration.
   designs, as for any trial.
 - Protocol publication is common and encouraged in this field.
 
-## Red flags specific to this field
+## Red flags
 
 - Cluster-delivered intervention analyzed at the individual level
 - Intervention described too vaguely to replicate

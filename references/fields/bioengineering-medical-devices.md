@@ -96,7 +96,7 @@ was done and against what specification.
 - Design files and analysis code increasingly shared; patent status may
   constrain what can be released, and that constraint should be stated.
 
-## Red flags specific to this field
+## Red flags
 
 - Benchtop or cadaveric results described in clinical-benefit language
 - Devices from a single manufacturing batch supporting a general claim

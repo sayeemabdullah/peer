@@ -89,7 +89,7 @@ studies more likely to report sponsor-favorable results.
 - Report the dietary assessment instrument, its validation in this
   population, and the food composition database and version used.
 
-## Red flags specific to this field
+## Red flags
 
 - A hazard ratio from a single FFQ-based cohort presented as dietary advice
 - No energy adjustment, or implausible-reporter exclusion rules appearing
